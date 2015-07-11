@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+if [ $1 = "fkvm" ]
+then
+    echo -n -e \\xB | ../fkvm fkvm_input1 > temp
+    diff fkvm_output1 temp
+    echo -n "HELLO" | ../fkvm fkvm_input2 > temp
+    diff fkvm_output2 temp
+    rm temp
+else
+    ../test_$1 > temp
+    diff $1_output temp
+    rm temp
+fi

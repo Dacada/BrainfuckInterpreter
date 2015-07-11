@@ -1,0 +1,40 @@
+[-]        Cell zero to zero 
+>,<        Cell one to input to keep track
+>>+<<      Cell two to one
+>>>+<<<    And cell three to one
+
+> The central cell will be cell one
+[
+  [>]<<< We move into the next zero cell and three cells back
+         We are now in cell one
+
+  Now it's just the algorithm
+
+  Cell one added into cell three
+  >[<
+    >-<
+    >>>>+<<<<
+    >>>+<<<
+  >]<
+  >>>>[<<<<
+    >>>>-<<<<
+    >+<
+  >>>>]<<<<
+
+  Cell two added into cell three
+  >>[<<
+    >>-<<
+    >>>>+<<<<
+    >>>+<<<
+  >>]<<
+  >>>>[<<<<
+    >>>>-<<<<
+    >>+<<
+  >>>>]<<<<
+
+  Back into very first cell
+  And then into cell one minus one
+  [<]
+  >-
+]
+#
